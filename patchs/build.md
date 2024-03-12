@@ -1,5 +1,9 @@
 # build手順
 
+## patchの適用
+
+patch.md
+
 ## Build linux
 
 ```
@@ -38,6 +42,6 @@ cp *.deb ../
 
 ```
 cd ./
-./configure --architecture amd64 --build-by "github.com/irumaru"
+./configure --architecture amd64 --build-type release --version 1.3.6 --build-by "github.com/irumaru"
 sudo make iso
 ```
